@@ -11,13 +11,13 @@
         <header>
             <h1>Santiago's Portfolio</h1>
             <nav class="tabs">
-                <button class="tab-button active" data-tab="about">About</button>
-                <button class="tab-button" data-tab="resume">Resume</button>
+                <button id="about-tab" class="tab-button active" data-tab="about" role="tab" aria-selected="true" aria-controls="about">About</button>
+                <button id="resume-tab" class="tab-button" data-tab="resume" role="tab" aria-selected="false" aria-controls="resume">Resume</button>
             </nav>
         </header>
 
         <main>
-            <section id="about" class="tab-content active">
+            <section id="about" class="tab-content active" role="tabpanel" aria-labelledby="about-tab">
                 <h2>About Me</h2>
                 <div class="about-content">
                     <div class="profile-section">
@@ -40,7 +40,7 @@
                 </div>
             </section>
 
-            <section id="resume" class="tab-content">
+            <section id="resume" class="tab-content" role="tabpanel" aria-labelledby="resume-tab">
                 <h2>Resume</h2>
                 <div class="resume-content">
                     <div class="resume-section">
